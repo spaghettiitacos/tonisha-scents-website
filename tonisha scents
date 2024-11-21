@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tonisha Scents and Skincare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Tonisha Scents & Skincare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a>
+                    <ul>
+                        <li><a href="#">Strong Scents</a></li>
+                        <li><a href="#">Not Strong Scents</a></li>
+                        <li><a href="#">Kids Skincare</a></li>
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Moisturizers</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                        <li><a href="#">Scrubs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Create Your Own Scent</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Create Your Signature Scent</h2>
+            <p>Explore our unique scents and skincare products with a fairy touch.</p>
+        </div>
+    </section>
+
+    <!-- Shop Categories -->
+    <section class="categories">
+        <div class="category">
+            <h3>Strong Scents</h3>
+            <p>Intense fragrances to leave a lasting impression.</p>
+        </div>
+        <div class="category">
+            <h3>Not Strong Scents</h3>
+            <p>Light, refreshing scents for every day.</p>
+        </div>
+        <div class="category">
+            <h3>Kids Skincare</h3>
+            <p>Gentle products for delicate skin.</p>
+        </div>
+        <div class="category">
+            <h3>Cleansers</h3>
+            <p>Perfect for refreshing your skin.</p>
+        </div>
+        <div class="category">
+            <h3>Moisturizers</h3>
+            <p>Hydrate your skin with our gentle creams.</p>
+        </div>
+        <div class="category">
+            <h3>Sunscreen</h3>
+            <p>Protect your skin from the sun.</p>
+        </div>
+        <div class="category">
+            <h3>Scrubs</h3>
+            <p>Exfoliate and rejuvenate your skin.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tonisha Scents & Skincare | All Rights Reserved</p>
+            <ul class="socials">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>/* Basic Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3e6f7, #fff);
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+    color: #6a4c9c;
+}
+
+a {
+    text-decoration: none;
+    color: #6a4c9c;
+}
+
+/* Header */
+header {
+    background: #f3e6f7;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li ul {
+    display: none;
+}
+
+header nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+header nav ul li ul li {
+    display: block;
+}
+
+/* Main Banner */
+.banner {
+    background: url('https://via.placeholder.com/1500x500/6a4c9c/ffffff?text=Tonisha+Scents') center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.banner-text h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.category {
+    background-color: #fff;
+    border: 2px solid #6a4c9c;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category h3 {
+    color: #6a4c9c;
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #6a4c9c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+}
+
+footer .socials li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .socials li a {
+    color: white;
+    font-size: 1.2em;
+}
+
+footer .socials li a:hover {
+    color: #f3e6f7;
+}
+
+/* Fairy Dust Animation */
+@keyframes sparkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    animation: sparkle 2s infinite;
+}
+</html>
